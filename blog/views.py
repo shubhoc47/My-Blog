@@ -59,14 +59,6 @@ def single_post(request, slug):
     
     try:
         post = next(post for post in multi_posts if post['slug'] == slug)
-        # post = ""
-
-        # for p in multi_posts:
-        #     if p['slug'] == slug:
-        #         post = p
-        #         break
-        # if post == "":
-        #     return render(request, '404.html')
 
         return render(request, 'blog/single-post.html',{
             "post": post
