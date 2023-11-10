@@ -1,0 +1,31 @@
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.custom-link {
+    text-decoration: none; /* Remove underline */
+    color: rgb(255, 255, 255); /* Change color to black */
+    /* You can use any color you prefer */
+}
+
+/* All Posts button */
+.all-posts-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}

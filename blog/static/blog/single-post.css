@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Single Post Styles */
+.single-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.post-author {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: #777;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-content p {
+    margin-bottom: 15px;
+}
+
+.post-footer {
+    text-align: right;
+}
+
+.comment-link {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+body {
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+}
+
+.single-post {
+    background-color: #fafafa; /* Lighter background color */
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition for background and text color */
+}
+
+.single-post:hover {
+    background-color: #fff; /* Darker background color on hover */
+    color: #111; /* Darker text color on hover */
+}
+
+.post-title {
+    font-size: 2.5em; /* Larger font size for the title */
+    color: #333; /* Dark text color for the title */
+}
+
+.post-author {
+    font-style: italic;
+    color: #555; /* Slightly darker color for the author name */
+}
+
+.post-content p {
+    margin-bottom: 20px; /* More spacing between paragraphs */
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 30px; /* Increased margin for the thumbnail */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly more prominent box shadow */
+}
+
+.comment-link {
+    padding: 12px 25px;
+    background-color: #e44d26; /* Vibrant orange-red color for the link */
+    color: #fff;
+    border-radius: 8px;
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold;
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.comment-link:hover {
+    background-color: #d0451b; /* Darker orange-red on hover */
+}

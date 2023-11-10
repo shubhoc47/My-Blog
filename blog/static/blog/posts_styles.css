@@ -1,0 +1,66 @@
+/* Basic reset and body styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+/* Main content styles */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* .post-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 15px;
+} */
+
+.post-thumbnail img {
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+.post-info h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.post-info p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.post-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}

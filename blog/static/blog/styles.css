@@ -1,0 +1,114 @@
+/* Your existing CSS styles can be enhanced as follows */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+.custom-link {
+    text-decoration: none; /* Remove underline */
+    color: rgb(255, 255, 255); /* Change color to black */
+    /* You can use any color you prefer */
+}
+/* Styles for the All Posts button */
+.all-posts-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Centering the profile image and name */
+.centered-profile {
+    text-align: center;
+    margin-bottom: 20px; /* Optional margin for separation */
+}
+
+.profile {
+    display: inline-block;
+    text-align: left; /* Aligning the text to the left */
+}
+.profile img {
+    display: block; /* To avoid extra spacing below the image */
+    margin: 0 auto 10px; /* Centering the image and providing bottom margin */
+}
+
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h1 {
+    margin: 5px 0 20px 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+article {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+.post-thumbnail {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.post-thumbnail img {
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    border-bottom: 1px solid #ccc;
+}
+
+
+.post-info h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.post-info p {
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.post-info a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}

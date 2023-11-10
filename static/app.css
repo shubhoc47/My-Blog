@@ -1,0 +1,23 @@
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* All Posts button */
+.all-posts-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %} Your Blog {% endblock title %}
+    
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/posts_styles.css' %}">
+{% endblock css_files %}    
+
+
+{% block content %}
+{% include "blog/includes/header.html" %}
+    <main>
+        <section class="blog-posts">
+            {% for post in posts %}
+                <article>
+                    <div class="post-thumbnail">
+                        <img src={% static post.image %} alt="Post 1 Image">
+                    </div>
+                    <div class="post-info">
+                        <h2>{{post.title}}</h2>
+                        <p>{{post.excerpt}}</p>
+                        <a href={% url "single-post" post.slug%}>Read more</a>
+                    </div>
+                </article>
+            {% endfor %}
+
+            
+            <!-- Add more articles following the same structure -->
+        </section>
+    </main>
+{% endblock content %}

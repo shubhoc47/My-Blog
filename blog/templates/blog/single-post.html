@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block title %} Your Blog {% endblock title %}
+    
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/single-post.css' %}">
+{% endblock css_files %}    
+
+
+{% block content %}
+{% include "blog/includes/header.html" %}
+<article class="single-post">
+    <header class="post-header">
+        <h1 class="post-title">The Exciting Journey: {{post.title}}</h1>
+        <p class="post-author">By {{post.author}}</p>
+        <p class="post-date">Published on {{post.date}}</p>
+    </header>
+    <div class="post-thumbnail">
+        <img src={% static post.image %} alt="Post Image">
+    </div>
+    <div class="post-content">
+        <p>
+        {{post.content | linebreaks}}   
+        </p>
+    </div>
+    <footer class="post-footer">
+        <a href="#comments" class="comment-link">Join the Conversation</a>
+    </footer>
+</article>
+{% endblock content %}

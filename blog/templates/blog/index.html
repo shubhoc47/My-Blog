@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Your Blog {% endblock title %}
+    
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/styles.css' %}">
+{% endblock css_files %}    
+
+
+{% block content %}
+
+<header>
+    <div class="centered-profile">
+        <div class="profile">
+            <img src="{% static 'blog/images/shubho.jpg' %}" alt="Your Image">
+            <h1>Shubho Chowdhury</h1>
+        </div>
+    </div>
+    <button class="all-posts-button"><a class='custom-link' href={% url 'all-post'%}> All Posts </a></button>
+</header>
+
+
+    <main>
+        <section class="blog-posts">
+            {% for post in posts%}
+                <article>
+                    <div class="post-thumbnail">
+                        <img src={% static post.image %} alt="Post 1 Image">
+                    </div>
+                    <div class="post-info">
+                        <h2>{{post.title}}</h2>
+                        <p>{{post.excerpt}}</p>
+                        <a href={% url "single-post" post.slug%}>Read more</a>
+                    </div>
+                </article>
+            {% endfor %}
+
+            {% comment %} <article>
+                <div class="post-thumbnail">
+                    <img src={% static "blog/images/second_post.jpg" %} alt="Post 2 Image">
+                </div>
+                <div class="post-info">
+                    <h2>Post Title 2</h2>
+                    <p>Another compelling description of the second post. Draw in readers with intriguing content snippets.</p>
+                    <a href="post2.html">Read more</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="post-thumbnail">
+                    <img src={% static "blog/images/third_post.jpeg" %} alt="Post 3 Image">
+                </div>
+                <div class="post-info">
+                    <h2>Post Title 3</h2>
+                    <p>A short summary of the third post. Convey the essence of the content to entice readers to click through.</p>
+                    <a href="post3.html">Read more</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="post-thumbnail">
+                    <img src={% static "blog/images/fourth_post.jpg" %} alt="Post 4 Image">
+                </div>
+                <div class="post-info">
+                    <h2>Post Title 4</h2>
+                    <p>Concise yet engaging details about the fourth post. Make readers curious to explore more.</p>
+                    <a href="post4.html">Read more</a>
+                </div>
+            </article> {% endcomment %}
+        </section>
+    </main>
+{% endblock content %}

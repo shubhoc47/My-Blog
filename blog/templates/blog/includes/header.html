@@ -1,0 +1,10 @@
+{% load static %}
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/includes/shared.css' %}">
+{% endblock css_files %} 
+
+<header class="header">
+    <h1><a class='custom-link' href={% url 'index'%}>Shubho's Blog</a></h1>
+    <button class="all-posts-button"><a class='custom-link' href={% url 'all-post'%}> All Posts </a></button>
+</header>
+
