@@ -17,7 +17,7 @@
         <p class="post-date">Published on {{post.date}}</p>
     </header>
     <div class="post-thumbnail">
-        <img src={% static post.image %} alt="Post Image">
+        <img src={% static "blog/images/"|add:post.image_name %} alt="Post Image">
     </div>
     <div class="post-content">
         <p>
