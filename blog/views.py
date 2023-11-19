@@ -24,7 +24,8 @@ def single_post(request, slug):
         post = Post.objects.get(slug=slug)
 
         return render(request, 'blog/single-post.html',{
-            "post": post
+            "post": post,
+            "tags": post.tag.all()
         })
     except:
         return render(request, '404.html')

@@ -119,3 +119,20 @@ body {
 .comment-link:hover {
     background-color: #d0451b; /* Darker orange-red on hover */
 }
+
+.post-tags {
+    margin-top: 10px; /* Adjust the top margin as needed */
+}
+
+.post-tags p {
+    display: inline-block;
+    background-color: #3498db; /* Tag background color */
+    color: #fff; /* Tag text color */
+    padding: 5px 10px;
+    margin-right: 10px; /* Adjust the right margin as needed */
+    border-radius: 5px;
+}
+
+.post-tags p:last-child {
+    margin-right: 0; /* Remove right margin for the last tag */
+}

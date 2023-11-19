@@ -13,6 +13,13 @@
 <article class="single-post">
     <header class="post-header">
         <h1 class="post-title">The Exciting Journey: {{post.title}}</h1>
+        
+        <div class="post-tags">
+            {% for tag in tags %}
+                <p>{{ tag.caption }}</p>
+            {% endfor %}
+        </div>
+
         <p class="post-author">By {{post.author}}</p>
         <p class="post-date">Published on {{post.date}}</p>
     </header>
